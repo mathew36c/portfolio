@@ -1,0 +1,78 @@
+@import "./plugins/bourbon/_bourbon"
+@import "./plugins/neat/_neat"
+@import "header"
+@import "landing"
+@import "services"
+@import "tiles"
+@import "contact-main"
+@import "about"
+@import "contact-page"
+@import "portfolio"
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700)
+
+
+*
+  font-family: 'Raleway', sans-serif !important
+  ::selection
+    background: #fcf200
+body
+  background-color: white
+h1
+  font-size: 41px
+  transition: font-size 0.5s ease
+  @include respondTo(md)
+    font-size: 41px
+  @include respondTo(sm)
+    font-size: 32px
+
+
+//Footer Section
+footer
+  background: #434343
+  .wrapper
+    +outer-container
+    text-align: center
+    color: white
+    .footer-logo
+      text-decoration: none
+      font-weight: 600
+      font-size: 28px
+      color: white
+      display: block
+      margin: 30px auto 10px
+    ul
+      list-style-type: none
+      padding: 0
+      li
+        display: inline-block
+        margin: 40px 10px 7px
+      .links
+        font-size: 14px
+        color: white
+        cursor: pointer
+        text-decoration: none
+        @include media(min-width 340px)
+          font-size: 18px
+        &::after
+          content: ''
+          display: block
+          width: 0
+          height: 1px
+          background: white
+          transition: width .3s
+        &:hover::after
+          width: 100%
+
+    .social a
+      cursor: pointer
+      img
+        opacity: 0.6
+        transition: opacity 0.3s ease
+        &:hover
+          opacity: 1
+    p
+      display: inline-block
+      margin-bottom: 30px
+      font-size: 14px
+      color: white

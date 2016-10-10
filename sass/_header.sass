@@ -1,0 +1,264 @@
+$shadow: 3px 3px 15px rgba(0, 0, 0, 0.51)
+$bg-color: #0077c3
+$burger: white
+
+@media screen and (min-width: 770px)
+
+  .logo
+    float: left
+    margin: 7px 0 0 15px
+    text-decoration: none
+    font-weight: 600
+    font-size: 32px
+    color: white
+  .foot-note
+    display: none
+  .nav-menu
+    height: 55px
+    width: 100%
+    background: rgba(0,0,0,0.5)
+    position: absolute
+    z-index: 999999
+  .menu-list
+    float: right
+    padding-right: 1em
+    ul
+      list-style-type: none
+      padding: 0
+      li
+        display: inline-block
+        margin-right: 15px
+        margin-bottom: 10px
+      a
+        cursor: pointer
+        img
+          float: right
+          margin-top: -12px
+          margin-right: 10px
+          opacity: 0.6
+          transition: opacity 0.4s ease
+          &:hover
+            opacity: 1
+      .links
+        font-size: 14px
+        color: white
+        cursor: pointer
+        text-decoration: none
+        &::after
+          content: ''
+          display: block
+          width: 0
+          height: 1px
+          background: white
+          transition: width .3s
+        &:hover::after
+          width: 100%
+@media screen and (max-height: 360px)
+  .foot-note
+    display: none
+//Mobile Here
+@media screen and (max-width: 769px)
+  body
+    margin: 0
+    width: 100%
+    height: 700px
+    background: #f1f1f1
+  .logo
+    float: left
+    margin: -15px 0 0 15px
+    text-decoration: none
+    font-weight: 800
+    font-size: 32px
+    color: white
+  .foot-note
+    .footer-logo
+      position: absolute
+      bottom: 0
+      margin: 0 auto 40px
+      left: 0
+      right: 0
+      text-decoration: none
+      font-weight: 700
+      font-size: 28px
+      color: white
+      display: block
+    p
+      position: absolute
+      bottom: 15px
+      margin: 0 auto 0
+      left: 0
+      right: 0
+      color: white
+      font-size: 14px
+
+  /* Relative Code Starts Here
+  #top-nav
+    position: fixed
+    width: 100%
+    height: 65px
+    background: rgba(0, 0, 0, 0.5)
+    z-index: 99999
+  .nav-menu
+    background: none
+    width: 60px
+    height: 80px
+    top: 0
+    right: 15px
+    -webkit-transition: width 0.2s ease, height 0.4s ease
+    -moz-transition: width 0.2s ease, height 0.4s ease
+    -o-transition: width 0.2s ease, height 0.4s ease
+    transition: width 0.2s ease, height 0.4s ease
+  .open
+    position: fixed
+    background: $bg-color
+    width: 100%
+    height: 100%
+    top: 0
+    right: 0
+  .menu-list
+    text-align: center
+    font-size: 30px
+    opacity: 0
+    transition: all 0.5s ease-in-out
+    @include media(max-height 320px)
+      margin-top: 15px
+      font-size: 22px
+    @include media(mix-height 320px)
+      margin-top: 90px
+      font-size: 30px
+  .list-open
+    opacity: 1
+    -webkit-transition: opacity 0.3s ease
+    -moz-transition: opacity 0.3s ease
+    -o-transition: opacity 0.3s ease
+    transition: opacity 0.64s ease
+    -webkit-transition-delay: 0.34s
+    -moz-transition-delay: 0.34s
+    -o-transition-delay: 0.34s
+    transition-delay: 0.34s
+  .menu-list ul
+    list-style-type: none
+    padding: 0
+    li
+      padding: 10px
+      background: none
+      color: #fff
+      &:hover
+        background: darken($bg-color, 5%)
+      a
+        color: white
+        text-decoration: none
+        cursor: pointer
+
+  .social
+    display: block
+    margin-top: 7px
+    a
+      margin-right: 10px
+      display: inline-block
+
+
+  /* Burger
+  #burger-wrap
+    position: fixed
+    top: 0
+    right: 15px
+    margin: 0
+    padding: 0
+    width: 60px
+    height: 80px
+  .burger
+    position: fixed
+    top: 2px
+    right: 15px
+    overflow: hidden
+    cursor: pointer
+    margin: 0
+    padding: 0
+    width: 60px
+    height: 80px
+    border-radius: 50%
+    border: none
+    -webkit-transition: all .3s
+    transition: all .3s
+    background-color: transparent
+    span
+      display: block
+      position: absolute
+      top: 30px
+      left: 16px
+      right: 16px
+      height: 3px
+      background: $burger
+      border-radius: 15px
+      -webkit-transition: background 0.3s .3s
+      transition: background 0.3s .3s
+      -o-transition: background 0s 0s
+      -webkit-transition-delay: 0.4s,0s
+      transition-delay: 0.4s,0s
+  .open .burger span
+    background: 0 0 transparent
+    transform: rotate(90deg)
+    -webkit-transition: all 0.3s ease-in
+    transition: all 0.3s ease-in
+    -o-transition: all 0s ease
+    -webkit-transition-delay: 0s,0s
+    transition-delay: 0s,0s
+  .burger span
+    &::after
+      position: absolute
+      display: block
+      left: 0
+      width: 100%
+      height: 3px
+      background-color: $burger
+      content: ""
+      border-radius: 5px
+      -webkit-transition-duration: .3s,.3s
+      transition-duration: .3s,.3s
+      -webkit-transition-delay: 0.4s,0s
+      transition-delay: 0.4s,0s
+    &::before
+      position: absolute
+      display: block
+      left: 0
+      width: 100%
+      height: 3px
+      background-color: $burger
+      content: ""
+      border-radius: 5px
+      -webkit-transition-duration: .3s,.3s
+      transition-duration: .3s,.3s
+      -webkit-transition-delay: 0.4s,0s
+      transition-delay: 0.4s,0s
+      top: -8px
+      -webkit-transition-property: top,-webkit-transform
+      transition-property: top,transform
+    &::after
+      bottom: -8px
+      -webkit-transition-property: bottom,-webkit-transform
+      transition-property: bottom,transform
+  .open .burger span
+    &::after
+      -webkit-transition-delay: 0s,.4s
+      transition-delay: 0s,.4s
+      background-color: #fafafa
+    &::before
+      -webkit-transition-delay: 0s,.4s
+      transition-delay: 0s,.4s
+      background-color: #fafafa
+      top: 0
+      -webkit-transform: rotate(45deg)
+      -ms-transform: rotate(45deg)
+      transform: rotate(45deg)
+    &::after
+      bottom: 1px
+      /* Fix for codepen, set to zero for normal use
+      -webkit-transform: rotate(-45deg)
+      -ms-transform: rotate(-45deg)
+      transform: rotate(-45deg)
+
+  /* Disable scrollbar on Chrome and Safari browsers!
+  html::-webkit-scrollbar
+    width: 0 !important
+    height: 0 !important

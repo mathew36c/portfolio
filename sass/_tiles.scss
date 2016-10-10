@@ -1,0 +1,59 @@
+.hover-tile-outer {
+  $base-border-color: #ccc;
+  $base-line-height: 1.5em !default;
+  $medium-screen: 40em !default;
+  $hover-tile-height: 150px;
+  $base-spacing: 1.5em;
+  display: inline-block;
+  border: 1px solid $base-border-color;
+  height: $hover-tile-height;
+  width: 237px;
+  height: 160px;
+  margin-right: -2px
+  img {
+    margin: 10px 6px;
+  }
+  .short-line {
+    display: block;
+    margin: 10px auto;
+    background-color: #ccc;
+    height: 3px;
+    width: 100px;
+  }
+
+  .hover-tile-container {
+    height: $hover-tile-height;
+    overflow: hidden;
+  }
+
+  .hover-tile-container:hover > .hover-tile {
+    transform: translate(0, -100%);
+  }
+
+  .hover-tile {
+    background: inherit;
+    height: inherit;
+    overflow: hidden;
+    padding: $base-spacing;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .hover-tile-hidden {
+    background: transparentize(#000, 0.5);
+
+    p {
+      color: transparentize(#fff, 0.3);
+    }
+
+    h4 {
+      font-weight: 700;
+      margin: 0 0 0.5em 0;
+      color: white;
+    }
+    a {
+      cursor: pointer;
+      color: white;
+      font-size: 14px;
+    }
+  }
+}

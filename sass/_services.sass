@@ -1,0 +1,68 @@
+$color1: #333333
+$blue: #426f9a
+$blue-hover: #3D6388
+
+.services
+  background: #f1f0f0
+
+  .wrapper
+    +row(block)
+    max-width: 1200px
+    margin: 0 auto
+    text-align: center
+    .titles
+      +span-columns(12)
+      color: $color1
+      h1
+        margin: 60px 20px 20px
+        color: $gray
+        font-weight: 700
+      p
+        margin: 20px
+        font-size: 22px
+        line-height: 40px
+        @include media (max-width 340px)
+          font-size: 18px
+    a
+      text-decoration: none
+    .btn-wrapper
+      +span-columns(12)
+      button
+        display: inline-block
+        margin: 60px 0 90px
+        background: $blue
+        padding: 15px
+        width: 200px
+        border: none
+        color: white
+        font-size: 18px
+        transition: background 0.3s ease
+        &:hover
+          background: $blue-hover
+          cursor: pointer
+
+    .tiles
+      +span-columns(6)
+      @include media(max-width 1180px)
+        +span-columns(12)
+    .video
+      +span-columns(6)
+      margin: 0 auto 45px
+      display: block
+      @include media(max-width 1180px)
+        +span-columns(12)
+      .video-wrapper
+        height: 0
+        overflow: hidden
+        padding-bottom: 56.25%
+        position: relative
+
+        embed, object, iframe
+          @include position(absolute, 0 null null 0)
+          @include size(100%)
+          z-index: 0
+          -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%)
+          -webkit-transform: rotate(0.000001deg)
+          -webkit-border-radius: 10px
+          -moz-border-radius: 10px
+          border-radius: 7px

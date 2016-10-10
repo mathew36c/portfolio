@@ -1,0 +1,115 @@
+$shadow: 3px 3px 15px rgba(0, 0, 0, 0.51)
+$gray: #404040
+$link-color: #0090ff
+
+// Breakpoints for each query
+$smartphone: 613px
+$desktop: 1100px
+@mixin respondTo($media)
+  @if $media == sm
+    @media (max-width: $smartphone)
+      @content
+
+  @else if $media == md
+    @media (max-width: $desktop)
+      @content
+
+  @else if $media == lg
+    @media (min-width: $desktop)
+      @content
+
+html, body
+  padding: 0
+  margin: 0
+  overflow-x: hidden
+
+.hero
+  background: url("../img/desk-bg.jpg") center center no-repeat
+  background-size: cover
+  height: 650px
+  @include media(max-width 320px)
+    height: 400px
+  @include media(min-width 321px)
+    height: 500px
+  @include media(min-width 768px)
+    height: 650px
+  //iPhone 5
+  @include media(width 320px height 568px)
+    height: 400px
+  @include media(width 568px height 320px)
+    height: 340px
+
+  .titles
+    +span-columns(12)
+    color: white
+    text-align: center
+    .headline
+      font-size: 60px
+      font-weight: 600
+      color: $gray
+      margin-bottom: 5px
+      transition: all 0.5s ease
+      text-shadow: 4px -3px 10px rgba(255, 255, 255, 1)
+      @include respondTo(lg)
+        font-size: 76px
+      @include respondTo(md)
+        font-size: 62px
+      @include respondTo(sm)
+        font-size: 42px
+      @include media(max-height 315px)
+        margin-top: 60px
+      @include media(min-height 315px)
+        margin-top: 130px
+      @include media(min-height 415px)
+        margin-top: 200px
+      @include media(min-height 680px)
+        margin-top: 220px
+      //iphone5 portrait
+      @include media(width 320px height 568px)
+        margin-top: 160px
+      //iphone5 landscape
+      @include media(width 568px height 320px)
+        margin-top: 120px
+
+    p
+      color: #404040
+      @include respondTo(lg)
+        font-size: 36px
+      @include respondTo(md)
+        font-size: 34px
+      @include respondTo(sm)
+        font-size: 24px
+    ul
+      padding: 0
+    li
+      display: inline-block
+      list-style-type: none
+    a
+      text-decoration: none
+      color: $link-color
+      font-size: 22px
+      @include respondTo(sm)
+        font-size: 18px
+      &::after
+        content: ''
+        display: block
+        width: 0
+        height: 1px
+        background: #0090ff
+        transition: width .3s
+      &:hover::after
+        width: 100%
+
+.line
+  display: block
+  margin: 0 auto
+  background-color: #ccc
+  height: 1px
+  width: 430px
+  transition: all 0.3s ease
+  @include respondTo(lg)
+    width: 430px
+  @include respondTo(md)
+    width: 330px
+  @include respondTo(sm)
+    width: 230px
