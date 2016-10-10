@@ -1,26 +1,16 @@
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
 
 
-Hi there! Welcome to Cloud9 IDE!
+----------------------------------------------------------------- 
 
-To get you started, we included a small hello world application.
+Hi there! 
 
-1) Open the hello-world.html file
+Thanks for checking out this repository. Bellow you'll find a link to a live demo. Enjoy!
 
-2) Click on the Preview button to open a live preview pane
+https://mathew36c.github.io/portfolio/
 
-3) Make some changes to the file, save, watch the preview, and have fun!
+Thanks,
 
-Happy coding!
-The Cloud9 IDE team
+Mathew Oscar Garalde
+contact@mathewgaralde.com
 
 
-## Support & Documentation
-
-Visit http://docs.c9.io for documentation, or http://support.c9.io for support.
-To watch some training videos, visit http://www.youtube.com/user/c9ide
