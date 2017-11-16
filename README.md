@@ -6,11 +6,11 @@ Hi there!
 
 Thanks for checking out this repository. Bellow you'll find a link to a live demo. Enjoy!
 
-https://mathew36c.github.io/portfolio/
+https://mattgaralde.com/
 
 Thanks,
 
 Mathew Oscar Garalde  
-contact@mathewgaralde.com
+contact@mattgaralde.com
 
 
