@@ -1,0 +1,37 @@
+announcement widget. Only managers can post
+>notification to members
+
+tools links widget on home page
+
+Upcoming Program Events
+>event notifications
+
+L2 escal request with Feedback
+>notify team lead
+>team  lead can change the status
+>enable reporting (issue category)
+
+`additional info needed
+`rejected
+`owned
+ 
+Enterprise Wiki (With Article Number) (Separate Page)
+>Admin Center
+>Exchange Online
+>Skype for Business
+>Office Pro Plus
+>SharePoint
+>OneDrive
+>Others
+(Visio)
+
+Escalation Path
+1. consult (link) shows available floorwalker for the day
+2. Post in yammer (link)
+3. Escalate to next team. (link to escal process guideline)
+
+`staffhub to sharepoint list (schedule twice a day)
+``gather all shifts
+``
+
+@greater(outputs('Compose'), 6)
