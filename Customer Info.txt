@@ -1,7 +1,0 @@
-Time Zone:
-Customer Name: 
-Customer Phone: 
-Customer e-mail: 
-Tenant GUID:
-Subscription type and #Licenses:
-Business Impact:
