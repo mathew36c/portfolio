@@ -11,6 +11,6 @@ http://mattgaralde.com/
 Thanks,
 
 Mathew Oscar Garalde  
-contact@mattgaralde.com
+mathewgaralde@gmail.com
 
 
