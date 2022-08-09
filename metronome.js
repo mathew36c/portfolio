@@ -7,7 +7,7 @@ class Metronome
         this.currentBeatInBar = 0;
         this.beatsPerBar = 1;
         this.tempo = tempo;
-        this.lookahead = 1;          // How frequently to call scheduling function (in milliseconds)
+        this.lookahead = 25;          // How frequently to call scheduling function (in milliseconds)
         this.scheduleAheadTime = 0.01;   // How far ahead to schedule audio (sec)
         this.nextNoteTime = 0.0;     // when the next note is due
         this.isRunning = false;
@@ -38,7 +38,7 @@ class Metronome
         osc.frequency.value = (beatNumber % this.beatsPerBar == 0) ? 1600 : 800;
         envelope.gain.value = 3;
         envelope.gain.exponentialRampToValueAtTime(1, time + 0.001);
-        envelope.gain.exponentialRampToValueAtTime(0.001, time + 0.02);
+        envelope.gain.exponentialRampToValueAtTime(0.001, time + 0.05);
 
         osc.connect(envelope);
         envelope.connect(this.audioContext.destination);
