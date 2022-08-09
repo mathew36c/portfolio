@@ -7,8 +7,8 @@ class Metronome
         this.currentBeatInBar = 0;
         this.beatsPerBar = 1;
         this.tempo = tempo;
-        this.lookahead = 25;          // How frequently to call scheduling function (in milliseconds)
-        this.scheduleAheadTime = 0.1;   // How far ahead to schedule audio (sec)
+        this.lookahead = 1;          // How frequently to call scheduling function (in milliseconds)
+        this.scheduleAheadTime = 0.01;   // How far ahead to schedule audio (sec)
         this.nextNoteTime = 0.0;     // when the next note is due
         this.isRunning = false;
         this.intervalID = null;
