@@ -76,7 +76,7 @@ class Metronome
         this.isRunning = true;
 
         this.currentBeatInBar = 0;
-        this.nextNoteTime = this.audioContext.currentTime + 0.05;
+        this.nextNoteTime = this.audioContext.currentTime + 0.03;
 
         this.intervalID = setInterval(() => this.scheduler(), this.lookahead);
     }
