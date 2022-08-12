@@ -50,8 +50,8 @@ class Metronome
         $(".rs-control .rs-range-color").css({"backgroundColor": "#5673e6"})
         $(".rs-control .rs-path-color").css({"backgroundColor": "#5673e6"})
         setTimeout(function(){
-       $(".rs-control .rs-range-color").css({"backgroundColor": "#292929"});
-       $(".rs-control .rs-path-color").css({"backgroundColor": "#292929"})
+       $(".rs-control .rs-range-color").animate(({"backgroundColor": "#292929"}, 'slow');
+       $(".rs-control .rs-path-color").animate(({"backgroundColor": "#292929"}, 'slow')
       }, 70);
     }
 
