@@ -35,9 +35,9 @@ class Metronome
         // push the note on the queue, even if we're not playing.
         this.notesInQueue.push({ note: beatNumber, time: time });
     
-        const color1 = this.accentColor1;
-        const color2 = this.accentColor2;
-        const bgcolor = this.bgColor;
+        const color1 = this.accentColor1(accentColor1);
+        const color2 = this.accentColor2(accentColor2);
+        const bgcolor = this.bgColor(bgColor);
         
         // create an oscillator
         const osc = this.audioContext.createOscillator();
