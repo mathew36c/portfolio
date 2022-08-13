@@ -12,6 +12,9 @@ class Metronome
         this.nextNoteTime = 0.0;     // when the next note is due
         this.isRunning = false;
         this.intervalID = null;
+        this.accentColor1 = #5673e6;
+        this.accentColor2 = #292929;
+        
     }
 
     nextNote()
@@ -47,11 +50,11 @@ class Metronome
         osc.start(time);
         osc.stop(time + 0.03);
         
-        $(".rs-control .rs-range-color").css({"backgroundColor": "#5673e6"})
-        $(".rs-control .rs-path-color").css({"backgroundColor": "#5673e6"})
+        $(".rs-control .rs-range-color").css({"backgroundColor": accentColor1})
+        $(".rs-control .rs-path-color").css({"backgroundColor": accentColor1})
         setTimeout(function(){
-       $(".rs-control .rs-range-color").css({"backgroundColor": "#292929"});
-       $(".rs-control .rs-path-color").css({"backgroundColor": "#292929"})
+       $(".rs-control .rs-range-color").css({"backgroundColor": accentColor2});
+       $(".rs-control .rs-path-color").css({"backgroundColor": accentColor2})
       }, 70);
     }
 
