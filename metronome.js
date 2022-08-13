@@ -35,9 +35,9 @@ class Metronome
         // push the note on the queue, even if we're not playing.
         this.notesInQueue.push({ note: beatNumber, time: time });
     
-        const color1 = this.accentColor1(accentColor1);
-        const color2 = this.accentColor2(accentColor2);
-        const bgcolor = this.bgColor(bgColor);
+        const color1 = "#5673e6";
+        const color2 = "#292929";
+        const bgcolor = "#292929";
         
         // create an oscillator
         const osc = this.audioContext.createOscillator();
@@ -55,11 +55,11 @@ class Metronome
         osc.start(time);
         osc.stop(time + 0.03);
         
-        $(".rs-control .rs-range-color").css({"backgroundColor": '#'+color1})
-        $(".rs-control .rs-path-color").css({"backgroundColor": '#'+color1})
+        $(".rs-control .rs-range-color").css({"backgroundColor": color1})
+        $(".rs-control .rs-path-color").css({"backgroundColor": color1})
         setTimeout(function(){
-       $(".rs-control .rs-range-color").css({"backgroundColor": '#'+bgcolor});
-       $(".rs-control .rs-path-color").css({"backgroundColor": '#'+bgcolor})
+       $(".rs-control .rs-range-color").css({"backgroundColor": bgcolor});
+       $(".rs-control .rs-path-color").css({"backgroundColor": bgcolor})
       }, 70);
     }
 
