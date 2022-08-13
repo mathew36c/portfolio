@@ -50,11 +50,11 @@ class Metronome
         osc.start(time);
         osc.stop(time + 0.03);
         
-        $(".rs-control .rs-range-color").css({"backgroundColor": "#"+accentColor1})
-        $(".rs-control .rs-path-color").css({"backgroundColor": "#"+accentColor1})
+        $(".rs-control .rs-range-color").css({"backgroundColor": '#'+accentColor1})
+        $(".rs-control .rs-path-color").css({"backgroundColor": '#'+accentColor1})
         setTimeout(function(){
-       $(".rs-control .rs-range-color").css({"backgroundColor": "#"+accentColor2});
-       $(".rs-control .rs-path-color").css({"backgroundColor": "#"+accentColor2})
+       $(".rs-control .rs-range-color").css({"backgroundColor": '#'+accentColor2});
+       $(".rs-control .rs-path-color").css({"backgroundColor": '#'+accentColor2})
       }, 70);
     }
 
